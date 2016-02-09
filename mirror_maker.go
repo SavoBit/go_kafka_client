@@ -17,11 +17,12 @@ package go_kafka_client
 
 import (
 	"fmt"
-	avro "github.com/stealthly/go-avro"
 	"hash/fnv"
 	"io/ioutil"
 	"reflect"
 	"time"
+
+	avro "github.com/mistsys/go-avro"
 )
 
 // MirrorMakerConfig defines configuration options for MirrorMaker

@@ -24,7 +24,7 @@ import (
 	"strconv"
 	"strings"
 
-	avro "github.com/stealthly/go-avro"
+	avro "github.com/mistsys/go-avro"
 )
 
 const (

@@ -1,4 +1,4 @@
-Syslog Producer for Apache Kafka 
+Syslog Producer for Apache Kafka
 ==================================
 
 This tool setups a Syslog server listening for syslog messages via TCP, parses them and produces into a Kafka topic.
@@ -47,7 +47,7 @@ You may pass all configurations described above as arguments to the container.
 Try it out using Vagrant
 =======================
 
-1. `cd $GOPATH/src/github.com/stealthly/go_kafka_client/syslog`
+1. `cd $GOPATH/src/github.com/mistsys/go_kafka_client/syslog`
 2. `vagrant up`
 
 After this is done you will have a VM available at `192.168.66.66` with Zookeeper on port 2181, Kafka on port 9092, and Syslog Server listening on TCP port 5140 and UDP port 5141. To verify this is working you may do the following:

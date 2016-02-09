@@ -18,10 +18,11 @@ package go_kafka_client
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/stealthly/go-avro"
-	avroline "github.com/stealthly/go_kafka_client/avro"
 	"regexp"
 	"strings"
+
+	"github.com/elodina/go-avro"
+	avroline "github.com/mistsys/go_kafka_client/avro"
 )
 
 type CodahaleKafkaReporter struct {

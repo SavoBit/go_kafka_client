@@ -1,9 +1,10 @@
 package main
 
 import (
-	kafka "github.com/stealthly/go_kafka_client"
 	"flag"
 	"os"
+
+	kafka "github.com/mistsys/go_kafka_client"
 )
 
 var zkConnect = flag.String("zookeeper", "", "zookeeper connection string host:port.")
@@ -13,7 +14,7 @@ var blueGroup = flag.String("blue.group", "", "first consumer group name")
 var bluePattern = flag.String("blue.pattern", "", "first consumer group name")
 
 var greenTopic = flag.String("green.topic", "", "second topic name")
-var greenGroup  = flag.String("green.group", "", "second consumer group name")
+var greenGroup = flag.String("green.group", "", "second consumer group name")
 var greenPattern = flag.String("green.pattern", "", "second consumer pattern")
 
 func main() {

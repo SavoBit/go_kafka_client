@@ -20,7 +20,7 @@ import (
 	"time"
 
 	"github.com/Shopify/sarama"
-	"github.com/stealthly/siesta"
+	"github.com/mistsys/siesta"
 )
 
 // LowLevelClient is a low-level Kafka client that manages broker connections, responsible to fetch metadata and is able
@@ -228,7 +228,7 @@ func (this *SaramaClient) collectMessages(partitionData *sarama.FetchResponseBlo
 	return messages
 }
 
-// SiestaClient implements LowLevelClient and OffsetStorage and uses github.com/stealthly/siesta as underlying implementation.
+// SiestaClient implements LowLevelClient and OffsetStorage and uses github.com/mistsys/siesta as underlying implementation.
 type SiestaClient struct {
 	config    *ConsumerConfig
 	connector siesta.Connector

@@ -17,10 +17,11 @@ package go_kafka_client
 
 import (
 	"fmt"
-	"github.com/stealthly/go-avro"
 	"io/ioutil"
 	"net/http"
 	"strings"
+
+	"github.com/elodina/go-avro"
 )
 
 type MarathonEventProducerConfig struct {

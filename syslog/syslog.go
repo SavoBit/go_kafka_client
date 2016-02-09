@@ -18,16 +18,17 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/Shopify/sarama"
-	"github.com/golang/protobuf/proto"
-	kafka "github.com/stealthly/go_kafka_client"
-	sp "github.com/stealthly/go_kafka_client/syslog/syslog_proto"
 	"math"
 	"os"
 	"os/signal"
 	"runtime"
 	"strings"
 	"time"
+
+	"github.com/Shopify/sarama"
+	"github.com/golang/protobuf/proto"
+	kafka "github.com/mistsys/go_kafka_client"
+	sp "github.com/mistsys/go_kafka_client/syslog/syslog_proto"
 )
 
 type tags map[string]string

@@ -18,10 +18,11 @@ package main
 import (
 	"flag"
 	"fmt"
-	kafka "github.com/stealthly/go_kafka_client"
 	"os"
 	"os/signal"
 	"runtime"
+
+	kafka "github.com/mistsys/go_kafka_client"
 )
 
 type consumerConfigs []string

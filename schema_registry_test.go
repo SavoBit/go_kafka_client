@@ -16,8 +16,9 @@ limitations under the License. */
 package go_kafka_client
 
 import (
-	avro "github.com/stealthly/go-avro"
 	"testing"
+
+	avro "github.com/mistsys/go-avro"
 )
 
 func TestSchemaRegistry(t *testing.T) {

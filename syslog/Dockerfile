@@ -4,7 +4,7 @@
 # The ASF licenses this file to You under the Apache License, Version 2.0
 # (the "License"); you may not use this file except in compliance with
 # the License.  You may obtain a copy of the License at
-# 
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
@@ -19,9 +19,9 @@ MAINTAINER stealthly
 
 #Get and build
 RUN git clone https://github.com/pote/gpm.git && cd gpm && git checkout v1.3.1 && ./configure && make install
-RUN mkdir -p $GOPATH/src/github.com/stealthly/ && cd $GOPATH/src/github.com/stealthly && git clone https://github.com/stealthly/go_kafka_client.git && cd go_kafka_client && gpm install
-RUN cd $GOPATH/src/github.com/stealthly/go_kafka_client/syslog && go build
+RUN mkdir -p $GOPATH/src/github.com/stealthly/ && cd $GOPATH/src/github.com/stealthly && git clone https://github.com/mistsys/go_kafka_client.git && cd go_kafka_client && gpm install
+RUN cd $GOPATH/src/github.com/mistsys/go_kafka_client/syslog && go build
 
-RUN cp $GOPATH/src/github.com/stealthly/go_kafka_client/syslog/syslog /usr/bin/syslogproducer
+RUN cp $GOPATH/src/github.com/mistsys/go_kafka_client/syslog/syslog /usr/bin/syslogproducer
 
 ENTRYPOINT ["syslogproducer"]

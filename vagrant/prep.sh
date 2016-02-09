@@ -2,7 +2,7 @@
 #Kafka settings
 
 wget https://storage.googleapis.com/golang/go1.4.linux-amd64.tar.gz
-tar -xvf go1.4.linux-amd64.tar.gz 
+tar -xvf go1.4.linux-amd64.tar.gz
 mv go /usr/local
 
 export KAFKA_VERSION=0.8.2.1
@@ -103,8 +103,8 @@ cp $ZK_HOME/conf/zoo_sample.cfg $ZK_HOME/conf/zoo.cfg
 #Get Go
 wget -q $GOLANG_URL -O /tmp/$GOLANG_RELEASE.tar.gz
 tar -xzf /tmp/$GOLANG_RELEASE.tar.gz -C /usr/bin
-mkdir -p $GOPATH/src/github.com/stealthly/go_kafka_client
-cp -r /vagrant/* $GOPATH/src/github.com/stealthly/go_kafka_client
+mkdir -p $GOPATH/src/github.com/mistsys/go_kafka_client
+cp -r /vagrant/* $GOPATH/src/github.com/mistsys/go_kafka_client
 
 mkdir -p /opt/github.com/pote
 cd /opt/github.com/pote

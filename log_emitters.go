@@ -17,8 +17,9 @@ package go_kafka_client
 
 import (
 	"fmt"
-	"github.com/stealthly/go_kafka_client/avro"
 	"time"
+
+	"github.com/mistsys/go_kafka_client/avro"
 )
 
 const (

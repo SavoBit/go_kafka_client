@@ -16,8 +16,9 @@ limitations under the License. */
 package go_kafka_client
 
 import (
-	"github.com/stealthly/go-avro"
 	"testing"
+
+	"github.com/elodina/go-avro"
 )
 
 const (

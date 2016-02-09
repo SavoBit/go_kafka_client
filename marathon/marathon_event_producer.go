@@ -18,13 +18,14 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/stealthly/go-avro"
-	kafka "github.com/stealthly/go_kafka_client"
 	"os"
 	"os/signal"
 	"runtime"
 	"strings"
 	"time"
+
+	"github.com/elodina/go-avro"
+	kafka "github.com/mistsys/go_kafka_client"
 )
 
 var logLevel = flag.String("log.level", "info", "Log level for built-in logger.")

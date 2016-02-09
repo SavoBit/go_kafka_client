@@ -4,7 +4,7 @@
 # The ASF licenses this file to You under the Apache License, Version 2.0
 # (the "License"); you may not use this file except in compliance with
 # the License.  You may obtain a copy of the License at
-# 
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
@@ -32,9 +32,9 @@ $KAFKA_PATH/bin/kafka-server-start.sh $KAFKA_PATH/config/server.properties &
 echo 'Starting Schema Registry'
 $REGISTRY_HOME/bin/schema-registry-start $REGISTRY_HOME/etc/schema-registry/schema-registry.properties &
 
-mkdir -p $GOPATH/src/github.com/stealthly/go_kafka_client
+mkdir -p $GOPATH/src/github.com/mistsys/go_kafka_client
 cp -r /go_kafka_client $GOPATH/src/github.com/stealthly
-cd $GOPATH/src/github.com/stealthly/go_kafka_client
+cd $GOPATH/src/github.com/mistsys/go_kafka_client
 
 echo 'Updating dependencies'
 gpm install

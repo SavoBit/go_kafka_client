@@ -20,7 +20,8 @@ import (
 	"encoding/binary"
 	"errors"
 	"fmt"
-	avro "github.com/stealthly/go-avro"
+
+	avro "github.com/mistsys/go-avro"
 )
 
 var magic_bytes = []byte{0}
