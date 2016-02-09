@@ -19,7 +19,6 @@ import (
 	"container/ring"
 	crand "crypto/rand"
 	"fmt"
-	"github.com/jimlawless/cfg"
 	"hash/fnv"
 	"math/rand"
 	"reflect"
@@ -27,6 +26,8 @@ import (
 	"strings"
 	"sync"
 	"time"
+
+	"github.com/mistsys/cfg"
 )
 
 // Loads a property file located at Path. Returns a map[string]string or error.
