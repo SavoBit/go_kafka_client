@@ -282,7 +282,7 @@ func (this *SiestaClient) Fetch(topic string, partition int32, offset int64) ([]
 	messages := make([]*Message, 0)
 
 	timestamp := time.Now().UnixNano() / int64(time.Millisecond)
-	collector := func(topic string, partition int32, offset int64, key []byte, value []byte) {
+	collector := func(topic string, partition int32, offset int64, key []byte, value []byte) error {
 		decodedKey, err := this.config.KeyDecoder.Decode(key)
 		if err != nil {
 			//TODO: what if we fail to decode the key: fail-fast or fail-safe strategy?
@@ -308,6 +308,7 @@ func (this *SiestaClient) Fetch(topic string, partition int32, offset int64) ([]
 			Offset:              offset,
 			HighwaterMarkOffset: response.Data[topic][partition].HighwaterMarkOffset,
 		})
+		return err
 	}
 
 	return messages, response.CollectMessages(collector)
