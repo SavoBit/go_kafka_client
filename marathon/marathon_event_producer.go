@@ -24,7 +24,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/elodina/go-avro"
+	"github.com/mistsys/go-avro"
 	kafka "github.com/mistsys/go_kafka_client"
 )
 

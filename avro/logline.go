@@ -1,6 +1,6 @@
 package avro
 
-import "github.com/elodina/go-avro"
+import "github.com/mistsys/go-avro"
 
 type LogLine struct {
 	Line      interface{}

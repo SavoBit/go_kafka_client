@@ -21,7 +21,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/elodina/go-avro"
+	"github.com/mistsys/go-avro"
 	avroline "github.com/mistsys/go_kafka_client/avro"
 )
 

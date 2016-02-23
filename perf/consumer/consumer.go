@@ -23,8 +23,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/elodina/go-avro"
 	"github.com/golang/protobuf/proto"
+	"github.com/mistsys/go-avro"
 	kafka "github.com/mistsys/go_kafka_client"
 	sp "github.com/mistsys/go_kafka_client/syslog/syslog_proto"
 	"github.com/rcrowley/go-metrics"

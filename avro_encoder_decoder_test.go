@@ -18,7 +18,7 @@ package go_kafka_client
 import (
 	"testing"
 
-	"github.com/elodina/go-avro"
+	"github.com/mistsys/go-avro"
 )
 
 const (

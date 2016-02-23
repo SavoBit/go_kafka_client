@@ -21,7 +21,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/elodina/go-avro"
+	"github.com/mistsys/go-avro"
 )
 
 type MarathonEventProducerConfig struct {
