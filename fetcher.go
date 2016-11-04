@@ -289,7 +289,8 @@ func (f *consumerFetcherRoutine) start() {
 								} else {
 									Warnf(f, "Got a fetch error for topic %s, partition %d: %s", nextTopicPartition.Topic, nextTopicPartition.Partition, err)
 									//TODO new backoff type?
-									time.Sleep(1 * time.Second)
+									panic(fmt.Errorf("Got a fetch error for topic %s, partition %d: %s", nextTopicPartition.Topic, nextTopicPartition.Partition, err))
+									//time.Sleep(1 * time.Second)
 								}
 							}
 						}
